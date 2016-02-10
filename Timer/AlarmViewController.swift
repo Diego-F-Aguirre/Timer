@@ -8,8 +8,7 @@
 
 import UIKit
 
-class AlarmViewController: UIViewController//, UIPickerViewDataSource, UIPickerViewDelegate 
-{
+class AlarmViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

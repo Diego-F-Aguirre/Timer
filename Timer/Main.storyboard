@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="163"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-Pz-bnL">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="162.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="163"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>

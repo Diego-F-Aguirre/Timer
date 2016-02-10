@@ -27,7 +27,32 @@ class Timer: NSObject {
     }
     var readableTime: String {
         get {
+            let totalSeconds = Int(self.seconds) // Good to know we can cast NSTimeInterval as an Int
             
+            let hours = totalSeconds / 3600
+            let minutes = totalSeconds / 360
+            let seconds = totalSeconds - (totalSeconds * 3600) - (minutes * 360)
+            
+            var hourString = ""
+            if hours > 0 {
+                hourString = "0\(minutes)"
+            }
+            
+            var minuteString = ""
+            if minutes > 10 {
+                minuteString = "\(minutes)"
+            } else {
+                minuteString = "0\(minutes)"
+            }
+            
+            var secondString = ""
+            if seconds > 10 {
+                secondString = "\(seconds)"
+            } else {
+                secondString = "0\(seconds)"
+            }
+            
+            return hourString + ":" + minuteString + ":" + secondString
         }
     }
     
