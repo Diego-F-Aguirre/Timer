@@ -101,8 +101,8 @@
 		01A6AB3A1BD55A8600293874 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				01A6AB691BD55B1800293874 /* AppDelegate.swift */,
 				01A6AB421BD55A8600293874 /* Assets.xcassets */,
+				01A6AB691BD55B1800293874 /* AppDelegate.swift */,
 				01A6AB6B1BD55B4500293874 /* Main.storyboard */,
 				E64221FB1C6A9ADC00F02242 /* Timer.swift */,
 				E64221F91C6A99E700F02242 /* AlarmViewController.swift */,

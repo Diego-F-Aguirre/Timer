@@ -25,34 +25,35 @@ class Timer: NSObject {
             }
         }
     }
+    
     var readableTime: String {
         get {
-            let totalSeconds = Int(self.seconds) // Good to know we can cast NSTimeInterval as an Int
+            let totalSeconds = Int(self.seconds)
             
             let hours = totalSeconds / 3600
-            let minutes = totalSeconds / 360
-            let seconds = totalSeconds - (totalSeconds * 3600) - (minutes * 360)
+            let minutes = (totalSeconds - (hours * 3600)) / 60
+            let seconds = totalSeconds - (hours * 3600) - (minutes * 60)
             
-            var hourString = ""
+            var hoursString = ""
             if hours > 0 {
-                hourString = "0\(minutes)"
+                hoursString = "\(hours):"
             }
             
-            var minuteString = ""
-            if minutes > 10 {
-                minuteString = "\(minutes)"
+            var minutesString = ""
+            if minutes < 10 {
+                minutesString = "0\(minutes):"
             } else {
-                minuteString = "0\(minutes)"
+                minutesString = "\(minutes):"
             }
             
-            var secondString = ""
-            if seconds > 10 {
-                secondString = "\(seconds)"
+            var secondsString = ""
+            if seconds < 10 {
+                secondsString = "0\(seconds)"
             } else {
-                secondString = "0\(seconds)"
+                secondsString = "\(seconds)"
             }
             
-            return hourString + ":" + minuteString + ":" + secondString
+            return hoursString + minutesString + secondsString
         }
     }
     
@@ -63,7 +64,7 @@ class Timer: NSObject {
     
     func startTimer() {
         if isOn != true {
-            NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "secondTick", userInfo: nil, repeats: true)
         }
     }
     
