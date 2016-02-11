@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y2C-of-TbX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E33e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y2C-of-TbX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-86-fel">
                                 <rect key="frame" x="217" y="289" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -33,11 +33,11 @@
             </objects>
             <point key="canvasLocation" x="2243" y="-87"/>
         </scene>
-        <!--Item-->
+        <!--Timer-->
         <scene sceneID="XGg-Us-FQW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RAt-9r-kCz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qaX-6Z-IT4"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="Time Filled-50" id="qaX-6Z-IT4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aQy-Fc-3Jr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -70,11 +70,11 @@
             </objects>
             <point key="canvasLocation" x="607" y="253"/>
         </scene>
-        <!--Item-->
+        <!--Alarm-->
         <scene sceneID="ziw-ZI-6ep">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vfj-QD-fVI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="byN-tJ-Gzt"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="Year of Rooster Filled-50" id="byN-tJ-Gzt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="20t-zv-uc3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -128,11 +128,11 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-Rt-Eqv">
                                                         <rect key="frame" x="243" y="0.0" width="46" height="216"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ZP-et-aUQ">
-                                                        <rect key="frame" x="289" y="0.0" width="243" height="216"/>
+                                                    <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZP-et-aUQ">
+                                                        <rect key="frame" x="289" y="0.0" width="242" height="216"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="EPm-6y-2Zh" id="WV5-qc-bvG"/>
                                                             <outlet property="delegate" destination="EPm-6y-2Zh" id="ey9-zP-pp2"/>
@@ -141,7 +141,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-8J-LTJ">
                                                         <rect key="frame" x="531" y="0.0" width="61" height="216"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -233,4 +233,8 @@
             <point key="canvasLocation" x="2243" y="593"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Time Filled-50" width="25" height="25"/>
+        <image name="Year of Rooster Filled-50" width="25" height="25"/>
+    </resources>
 </document>

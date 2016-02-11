@@ -50,6 +50,9 @@ class TimerViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "showTimerPicker", name: Timer.notificationComplete, object: timer)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateUILabel", name: Timer.notificationSecondTick, object: timer)
         
+        pauseButton.layer.cornerRadius = 50
+        startButton.layer.cornerRadius = 50
+        
 //        hoursPickerView.delegate = self
 
     }
