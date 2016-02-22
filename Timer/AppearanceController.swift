@@ -18,7 +18,6 @@ class AppearanceController {
         UIButton.appearance().backgroundColor = UIColor.brightYellow()
         UIButton.appearance().tintColor = UIColor.darkGrayColor()
         
-
         
     }
 }

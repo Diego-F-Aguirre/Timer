@@ -38,7 +38,6 @@ class TimerViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
             timer.setTimer(NSTimeInterval(seconds), totalSeconds: NSTimeInterval(seconds))
             timer.startTimer()
         }
-        
     }
     
     
